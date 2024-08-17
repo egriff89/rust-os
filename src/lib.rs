@@ -3,7 +3,9 @@
 #![feature(custom_test_frameworks)]
 #![test_runner(crate::test_runner)]
 #![reexport_test_harness_main = "test_main"]
+#![feature(abi_x86_interrupt)]
 
+pub mod interrupts;
 pub mod serial;
 pub mod vga_buffer;
 use core::panic::PanicInfo;
@@ -55,10 +57,16 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
     }
 }
 
+// initialize Interrupt Disruptor Table (IDT)
+pub fn init() {
+    interrupts::init_idt();
+}
+
 /// Entry point for `cargo test`
 #[cfg(test)]
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
+    init();
     test_main();
     loop {}
 }
