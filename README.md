@@ -2,7 +2,7 @@
 Basic OS written in Rust, using https://os.phil-opp.com as a guide.
 
 ---
-##### Progress
+### Progress
 * Bare Bones
   - [x] Freestanding Rust Binary
   - [x] Minimal Rust Kernel
