@@ -57,7 +57,7 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
     }
 }
 
-// initialize Interrupt Disruptor Table (IDT)
+// initialize Interrupt Descriptor Table (IDT)
 pub fn init() {
     interrupts::init_idt();
 }
