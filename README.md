@@ -9,7 +9,7 @@ Basic OS written in Rust, using https://os.phil-opp.com as a guide.
   - [x] VGA TextMmode
   - [x] Testing
 * Interrupts
-  - [ ] CPU Exceptions
+  - [x] CPU Exceptions
   - [ ] Double Faults
   - [ ] Hardware Interrupts
 * Memory Management
