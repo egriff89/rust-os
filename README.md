@@ -2,6 +2,19 @@
 Basic OS written in Rust, using https://os.phil-opp.com as a guide.
 
 ---
+### Requirements
+- Rust nightly build
+- `thumbv7em-none-eabihf` target 
+- `bootimage` crate for building the kernel
+- `llvm-tools` and `rust-src` components to recompile `core`
+
+```shell
+rustup toolchain install nightly
+rustup target add thumbv7em-none-eabihf
+rustup component add llvm-tools rust-src
+cargo install bootimage
+```
+---
 ### Progress
 * Bare Bones
   - [x] Freestanding Rust Binary
