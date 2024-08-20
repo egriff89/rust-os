@@ -24,7 +24,7 @@ cargo install bootimage
 * Interrupts
   - [x] CPU Exceptions
   - [x] Double Faults
-  - [ ] Hardware Interrupts
+  - [x] Hardware Interrupts
 * Memory Management
   - [ ] Intro to Paging
   - [ ] Paging Implementation
