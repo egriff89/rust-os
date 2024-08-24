@@ -21,7 +21,7 @@ cargo install bootimage
 * Bare Bones
   - [x] Freestanding Rust Binary
   - [x] Minimal Rust Kernel
-  - [x] VGA TextMmode
+  - [x] VGA Text Mode
   - [x] Testing
 * Interrupts
   - [x] CPU Exceptions
