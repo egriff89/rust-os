@@ -3,6 +3,7 @@ Basic OS written in Rust, using https://os.phil-opp.com as a guide.
 
 ---
 ### Requirements
+- [QEMU](https://www.qemu.org/download/)
 - Rust nightly build
 - `thumbv7em-none-eabihf` target 
 - `bootimage` crate for building the kernel
@@ -14,6 +15,7 @@ rustup target add thumbv7em-none-eabihf
 rustup component add llvm-tools rust-src
 cargo install bootimage
 ```
+
 ---
 ### Progress
 * Bare Bones
@@ -26,8 +28,8 @@ cargo install bootimage
   - [x] Double Faults
   - [x] Hardware Interrupts
 * Memory Management
-  - [ ] Intro to Paging
-  - [ ] Paging Implementation
+  - [x] Intro to Paging
+  - [x] Paging Implementation
   - [ ] Heap Allocation
   - [ ] Allocator Designs
 * Multitasking
