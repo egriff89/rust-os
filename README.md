@@ -31,6 +31,6 @@ cargo install bootimage
   - [x] Intro to Paging
   - [x] Paging Implementation
   - [x] Heap Allocation
-  - [ ] Allocator Designs
+  - [x] Allocator Designs
 * Multitasking
   - [ ] Async/Await
