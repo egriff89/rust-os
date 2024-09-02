@@ -33,4 +33,4 @@ cargo install bootimage
   - [x] Heap Allocation
   - [x] Allocator Designs
 * Multitasking
-  - [ ] Async/Await
+  - [x] Async/Await
